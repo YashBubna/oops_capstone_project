@@ -13,7 +13,7 @@ public class Customer {
     private LocalDate dateOfBirth;
 
 
-    public Customer(String customerId, String name, String email, String phoneNumber, LocalDate dateOfBirth) {
+    public Customer(String name, String email, String phoneNumber, LocalDate dateOfBirth) {
         if(!isValidEmail(email) || !isValidPhoneNumber(phoneNumber)){
             throw new IllegalArgumentException("Invalid email or number format");
         }
